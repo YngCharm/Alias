@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ALIAS"
+        android:textColor="@color/title"
+        android:textFontWeight="1000"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="60"
+        android:textFontWeight="1000"
+        android:textSize="44sp"
+        android:layout_marginTop="50sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/word_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="44sp"
+            android:text="Пример"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button
+            android:id="@+id/guess_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="УГАДАЛ"
+            android:layout_marginEnd="20dp"
+            android:background="@color/agree_button"/>
+
+        <Button
+            android:id="@+id/skip_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ПРОПУСТИТЬ"
+            android:layout_marginStart="20dp"
+            android:background="@color/title"/>
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
